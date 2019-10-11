@@ -2,6 +2,7 @@
 Change Log
 ##########
 
+<<<<<<< HEAD
 Version 3.1.12
 ==============
 
@@ -553,6 +554,13 @@ Bug fixes for 3.0.2
 -  Fixed a bug where :doc:`Pagination Library <libraries/pagination>` added the 'rel="start"' attribute to the first displayed link even if it's not actually linking the first page.
 -  Fixed a bug (#4137) - :doc:`Error Handling <general/errors>` breaks for the new ``Error`` exceptions under PHP 7.
 -  Fixed a bug (#4126) - :doc:`Form Validation Library <libraries/form_validation>` method ``reset_validation()`` discarded validation rules from config files.
+=======
+Version 3.1.0
+=============
+
+Release Date: Not Released
+
+>>>>>>> [ci skip] Start of 3.1.0-dev
 
 Version 3.0.1
 =============
