@@ -55,11 +55,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @var	string
  *
  */
-<<<<<<< HEAD
 	const CI_VERSION = '3.1.12-dev';
-=======
-	define('CI_VERSION', '3.1.0-dev');
->>>>>>> [ci skip] Start of 3.1.0-dev
+
+
 
 /*
  * ------------------------------------------------------

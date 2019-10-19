@@ -25,10 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $prot = 'http://';
-if (!empty($_SEVER['HTTPS'])){
+
+if(!empty($_SERVER['HTTPS'])){
   $prot = 'https://';
 }
-
 $config['base_url'] = $prot . $_SERVER['HTTP_HOST'] . '/';
 
 /*
