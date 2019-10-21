@@ -14,7 +14,7 @@ class Contact extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('form');
+		$this->load->view('contact/form');
 	}
 
 	public function confirm(){
@@ -25,6 +25,8 @@ class Contact extends CI_Controller {
 		$this->form_validation->set_rules('email', 'メールアドレス', 'required');
 		$this->form_validation->set_rules('content', 'お問い合わせ内容', 'required');
 
+		$this->form_validation->set_message('required','%sは必須内容です');
+
 		$res = $this->form_validation->run();
 
 		if($res){
@@ -33,8 +35,13 @@ class Contact extends CI_Controller {
 		  $data['tel'] = $this->input->post('tel');
 		  $data['email'] = $this->input->post('email');
 		  $data['content'] = $this->input->post('content');
+
+		  $this->load->view('contact/confirm', $data);
 		}else{
-		  1
+		  $data['error_message'] = validation_errors();
+		  $data['param'] = $this->input->post();
+
+		  $this->laod->view('contact/form', $data); 
 		}
 	}
 
@@ -43,8 +50,6 @@ class Contact extends CI_Controller {
 
 		if($post){
 		  
-                    $post = $this->input->post();
-
  		    $this->load->library('parser');
 		  
 		    $this->config->load('app', TRUE);
