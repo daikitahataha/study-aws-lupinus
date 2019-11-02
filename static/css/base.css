@@ -13,8 +13,10 @@
 /* header */
 
 *{
-  font-family: 'Noto Sans japanese';
+  font-family: 'Noto Sans JP';
 }
+
+
 
 #header{
   display: flex;
@@ -34,6 +36,13 @@
   display: flex;
   margin: 45px 0 0 auto;
   position: relative;
+}
+
+.span_now{
+  color: #E3675F;
+  display: inline-block;
+  border-bottom: 4px solid #E3675F;
+  width: 80%;
 }
 
 .sp_header_menu{
@@ -56,7 +65,7 @@
 }
 
 .menu_normal{
-  width: 80px;
+  width: 70px;
   font-size: 14px;
   letter-spacing: 1.2px;
   text-align: center;
@@ -98,6 +107,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 #top-mv::before{
@@ -200,7 +210,8 @@
 .content02-flex{
   display: flex;
   width: 99.9%;
-  margin: 0 auto 12% auto;;
+  margin: 0 auto 12% auto;
+  align-items: center;
 }
 
 .flex-title{
@@ -494,7 +505,7 @@
 
 .about-title h2{
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 0.1em;
 }
 
@@ -658,6 +669,186 @@
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 18px;
+  font-weight: 350;
+}
+
+/* roomIndex */
+
+#room-index{
+  padding:0 10%;
+}
+
+.room-index-flex{
+  display: flex;
+  margin-bottom: 7%;
+
+}
+
+.room-content{
+  margin:0 2%;
+}
+
+.room-content-img{
+  width: 100%;
+}
+
+.room-content-img img{
+  width: 100%;
+  text-align: center;
+}
+
+.room-content-tx{
+  margin-top: 5%;
+}
+
+.place{
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  font-family: 'Noto Sans japanese';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.date{
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.back-top{
+  width: 50px;
+  margin-top: 10%;
+  margin-left: 95%;
+}
+
+.back-top img{
+  width: 100%;
+}
+
+/* roomDetail  */
+
+#detail-mv{
+  background: url(../../static/images/patrick-perkins-23.png) center center no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding:0 15%;
+}
+
+#detail-mv::before{
+  content: '';
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.detail-mv-tx{
+  position: absolute;
+  color: #F9F9F9;
+}
+
+.detail-mv-tx h3{
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 2.1em;
+}
+
+.detail-mv-tx p{
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 0.1em;
+}
+
+#roomDetailcontent{
+  padding:0 18%;
+}
+
+.roomDetailcontent-tx{
+  border-bottom: 1px solid #1D1916;
+  padding: 5% 0 2% 0;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.roomDetailcontent-img{
+  margin-top: 5%;
+  width: 100%;
+}
+
+.roomDetailcontent-img img{
+  width: 100%;
+}
+
+.detailArrows{
+  display: flex;
+  margin: 5% 0;
+}
+
+.detailArrows img{
+  width: 10px;
+  height: 15px;
+  margin-top: 10%;
+}
+
+.detail-prev{
+  display: flex;
+  margin:0 auto 0 0;
+}
+
+.detail-prev p{
+  text-align: right;
+  line-height: 1.6em;
+
+}
+
+.detail-next p{
+  text-align: left;
+  line-height: 1.6em;
+}
+
+.detail-next{
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+.detailArrows span{
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.1em
+}
+
+.detail-prev span{
+  text-align: right;
+}
+
+.detail-next span{
+  text-align: left;
+}
+
+#roomDetailinquiry{
+  margin-top: 5%;
+  background-color: rgba(220,220,220, 0.2);
+}
+
+.detail-inquiry-tx{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+}
+
+.line{
+  margin-top: 5%;
+}
+
+.forDetail{
+  padding: 5% 0;
 }
 
 /* footer  */
@@ -698,4 +889,8 @@
 .footer-copyright p{
   font-size: 12px;
   text-align: center;
+}
+
+.pc_display_none{
+  display: none;
 }

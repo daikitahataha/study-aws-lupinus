@@ -8,7 +8,11 @@ font-face{
   src: uri('../font/DINNextLTPro-Regular.woff') format('woff');
 }
 
-@media only screen and (max-width:900px){
+@media screen and (max-width:900px){
+
+  .wrapper{
+    overflow: hidden;
+  }
 
   .header_menu{
     display: none;
@@ -17,7 +21,7 @@ font-face{
 
   .menu {
     position: fixed;
-    top: 36px;
+    bottom: 93%;
     right: 30px;
     cursor: pointer;
     z-index: 10000;
@@ -56,5 +60,152 @@ font-face{
   }
 
 
+
+@media only screen and (max-width:500px){
+
+  #top-mv .mv-tx h2{
+    font-size: 22px;
+  }
+
+  #top-mv .mv-tx h3{
+    font-size: 12px;
+  }
+
+  .content-title h2{
+    font-size: 18px;
+  }
+
+  .sp_display_none{
+    display: none;
+  }
+
+  .pc_display_none{
+    display: block;
+  }
+
+  .content-tx{
+    width: 80%;
+  }
+
+  .content-lead-tx {
+    font-size: 10px;
+}
+
+  .content02-title p{
+    font-size: 14px;
+  }
+
+  .content02-title h2{
+    font-size: 20px;
+  }
+
+  .content02-flex{
+    display: block;
+    margin-bottom: 25%;
+  }
+
+  #content02{
+    padding: 5% 5%;
+  }
+
+  .content02-tx{
+    width: 90%;
+  }
+
+  .flex-title{
+    justify-content: center;
+    width: 90%;
+    margin:0 auto;
+  }
+
+  .title-num{
+    font-size: 60px;
+    margin: 0 auto;
+  }
+
+  .title-tx{
+    margin: 0 auto;
+  }
+
+  .content-flex-img, .content-flex-img2{
+    margin: 10% auto;
+  }
+
+  .sp_flex_title{
+    width: 50%;
+  }
+
+  .content02-inquiry{
+    width:100%;
+    line-height: 2em;
+  }
+
+  .content02-inquiry p{
+    width:100%;
+    line-height: 2em;
+    font-size: 16px;
+    margin-bottom: 10%;
+  }
+
+  .content02-inquiry-button{
+    width: 60%;
+  }
+
+  .content-flex-lead-tx p{
+    font-size: 12px;
+  }
+
+  #content03{
+    padding: 5% 5%;
+  }
+
+  .content03-title{
+    width: 80%;
+  }
+
+  .content03-title2, .content03-title3{
+    margin-top: 20%;
+  }
+
+
+
+  .content03-title img{
+    width: 35px;
+  }
+
+  .content03-title2 img{
+    width: 35px;
+  }
+
+  .seeAlltop{
+    width: 80%;
+    margin: 25% auto 15% auto;
+  }
+
+  .footer-logo{
+    width: 180px;
+  }
+
+  .footer-menu{
+    width: 80%;
+    margin: 10% auto 10% auto;
+  }
+
+  .footer-menu ul li a{
+    font-size: 14px;
+  }
+
+  .footer-copyright p{
+    font-size: 8px;
+  }
+
+  .sp_display_none{
+    display: none;
+  }
+
+  .pc_display_none{
+    display: block;
+  }
+}
 
 }

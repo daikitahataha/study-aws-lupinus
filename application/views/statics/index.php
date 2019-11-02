@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=400">
     <title>lupinus</title>
 
     <link rel="stylesheet" href="<?= base_url('static/css/base.css'); ?>">
@@ -27,18 +28,16 @@
 <body>
     <div class="wrapper">
       <section id="header">
-          <a href="#">
-            <div class="logo">
+            <a class="logo">
 	            <img src="<?= base_url('static/images/component.png'); ?>">
-            </div>
-          </a>
+            </a>
 
           <div class="header_menu">
               <ul>
-	                <li class="menu_normal"><a href="#">会社情報</a></li>
-	                <li class="menu_normal"><a href="#">実績</a></li>
-                  <li class="menu_normal"><a href="#">料金例</a></li>
- 		              <li class="menu_normal"><a href="#">フロー</a></li>
+                <a href="#"><li class="menu_normal">会社情報</li></a>
+                <a href="#"><li class="menu_normal">実績</li></a>
+                <a href="#"><li class="menu_normal">料金例</li></a>
+                <a href="#"><li class="menu_normal">フロー</li></a>
 	            </ul>
               <div class="menu_inquiry">
                 <a href="#">
@@ -93,20 +92,21 @@
 
                   <div class="content-lead-tx">
                       <p>
-                        土地や一棟のビルを持たなくても、部屋さえ持っていれば誰でも
+                        土地や一棟のビルを持たなくても、<br class="pc_display_none">部屋さえ持っていれば誰でも
 	                      <br>
 		                    ホテル事業をやっていける今の時代。
                         <br>
 		                    <br>
-		                    民泊より少しワンランクアップしたホテルを残したい。
+		                    民泊より少しワンランクアップした<br class="pc_display_none">
+                        ホテルを残したい。
+		                    <br class="sp_display_none">
+		                    たくさんの人たちに<br class="pc_display_none">ステイしてもらい、喜んでもらいたい。
+                        <br>
+                        <br>
+		                    そんな思いをお持ちの方、<br class="pc_display_none">お部屋を人気のホテルにプロデュース<br class="pc_display_none">してみませんか？
 		                    <br>
-		                    たくさんの人たちにステイしてもらい、喜んでもらいたい。
                         <br>
-                        <br>
-		                    そんな思いをお持ちの方、お部屋を人気のホテルにプロデュースしてみませんか？
-		                    <br>
-                        <br>
-	                      部屋づくりから集客まで、ルピナスにお任せください。
+	                      部屋づくりから集客まで、<br class="pc_display_none">ルピナスにお任せください。
 	                    </p>
                   </div>
               </div>
@@ -147,13 +147,13 @@
                   </div>
               </div>
 
-              <div class="content02-flex">
+              <div class="content02-flex sp_display_none">
 
                   <div class="content-flex-img2">
                       <img src="<?= base_url('static/images/group-50.png'); ?>">
                   </div>
                   <div class="content02-tx">
-                    <div class="flex-title">
+                    <div class="flex-title sp_flex_title">
 	                     <div class="title-num">
 		                       <p>02</p>
                        </div>
@@ -176,9 +176,38 @@
                   </div>
               </div>
 
+              <div class="content02-flex pc_display_none">
+
+                  <div class="content02-tx">
+                    <div class="flex-title sp_flex_title">
+                       <div class="title-num">
+                           <p>02</p>
+                       </div>
+                       <div class="title-tx2">
+                          <p>MARKETING</p>
+                          <h4>集客</h4>
+                       </div>
+                    </div>
+                    <div class="content-flex-lead-tx">
+                          <p>
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                          </p>
+                    </div>
+                  </div>
+                  <div class="content-flex-img2">
+                      <img src="<?= base_url('static/images/group-50.png'); ?>">
+                  </div>
+              </div>
+
               <div class="content02-flex">
                   <div class="content02-tx">
-                      <div class="flex-title">
+                      <div class="flex-title sp_flex_title">
 	                       <div class="title-num">
 		                         <p>03</p>
                           </div>
@@ -220,7 +249,7 @@
 
              <div class="content03-title">
  		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
-                <p>部屋づくりから運営まで、全部丸投げOK</p>
+                <p>部屋づくりから運営まで、<br class="pc_display_none">全部丸投げOK</p>
 	           </div>
              <div class="content03-img">
 	              <img src="<?= base_url('static/images/group-52.png'); ?>">
@@ -404,7 +433,14 @@
        slidesToShow: 3,
        autoplaySpeed: 5000,
        prevArrow: '<img src="<?= base_url('static/images/down-arrow.png'); ?>" class="slick-prev">',
-       nextArrow: '<img src="<?= base_url('static/images/down-arrow-1.png'); ?>" class="slick-next">'
+       nextArrow: '<img src="<?= base_url('static/images/down-arrow-1.png'); ?>" class="slick-next">',
+
+       responsive: [{
+      breakpoint: 900,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
      });
 
    });

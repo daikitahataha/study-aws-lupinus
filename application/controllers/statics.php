@@ -20,6 +20,10 @@ class Statics extends CI_Controller {
   }
 
   public function roomIndex(){
-    $this->load->view('static/roomIndex');
+    $this->load->view('statics/roomIndex');
+  }
+
+  public function roomDetail(){
+    $this->load->view('statics/roomDetail');
   }
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>lupinus</title>
 
     <link rel="stylesheet" href="<?= base_url('static/css/base.css'); ?>">
@@ -16,20 +17,17 @@
 <body>
   <div class="wrapper">
     <section id="header">
-        <a href="#">
-          <div class="logo">
-            <a href="#">
+          <a class="logo">
               <img src="<?= base_url('static/images/component.png'); ?>">
-            </a>
-          </div>
+          </a>
 
 
         <div class="header_menu">
             <ul>
-                <li class="menu_normal"><a href="#">会社情報</a></li>
-                <li class="menu_normal"><a href="#">実績</a></li>
-                <li class="menu_normal"><a href="#">料金例</a></li>
-                <li class="menu_normal"><a href="#">フロー</a></li>
+              <a class="span_now" href="#"><li class="menu_normal">会社情報</li></a>
+              <a href="#"><li class="menu_normal">実績</li></a>
+              <a href="#"><li class="menu_normal">料金例</li></a>
+              <a href="#"><li class="menu_normal">フロー</li></a>
             </ul>
             <div class="menu_inquiry">
               <a href="#">
