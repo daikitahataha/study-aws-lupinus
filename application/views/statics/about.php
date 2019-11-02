@@ -102,7 +102,7 @@
                 </tr>
                 <tr>
                     <td class="td-left">連絡先</td>
-                    <td class="td-right">TEL : 03-6676-4662 FAX : 03-6700-1237</td>
+                    <td class="td-right">TEL : 03-6676-4662<br class="pc_display_none"> FAX : 03-6700-1237</td>
                 </tr>
                 <tr>
                     <td class="td-left">代表者</td>
@@ -164,7 +164,7 @@
               </div>
               <div class="people-content-tx">
                   <div class="people-content-name-2">
-                      <p class="official2">CTO(チーフテクノロジーオフィサー)</p>
+                      <p class="official2">CTO<br class="pc_display_none">(チーフテクノロジーオフィサー)</p>
                       <p class='name'>山本 裕也</p>
                   </div>
 

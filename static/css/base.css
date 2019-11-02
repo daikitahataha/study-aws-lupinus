@@ -716,8 +716,7 @@
 
 .back-top{
   width: 50px;
-  margin-top: 10%;
-  margin-left: 95%;
+  margin: 10% 0 0 auto;
 }
 
 .back-top img{

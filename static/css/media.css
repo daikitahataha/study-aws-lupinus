@@ -199,6 +199,98 @@ font-face{
     font-size: 8px;
   }
 
+  .about-mv-tx{
+    width: 85%;
+  }
+
+  .about-mv-tx p{
+    line-height: 2em;
+  }
+
+  #company-intro td{
+    font-size: 12px;
+  }
+
+  #company-intro table{
+    width: 90%;
+  }
+
+  .people-content{
+    display: block;
+  }
+
+  .people-content-wrap{
+    width: 90%;
+  }
+
+  .people-content-img{
+    width: 80%;
+    margin: 10% auto;
+  }
+
+.people-content-tx{
+  margin: 0 auto;
+}
+
+.people-content-name-1, .people-content-name-2{
+  margin-bottom: 10%;
+}
+
+#room-index{
+  padding: 0 5%;
+}
+
+.room-index-flex{
+  display: block;
+}
+
+.room-content{
+  margin: 20% auto;
+}
+
+#detail-mv{
+  justify-content: center;
+}
+
+.detail-mv-tx h3{
+  font-size: 30px;
+}
+
+.detail-mv-tx p{
+  font-size: 14px;
+}
+
+#roomDetailcontent{
+  padding:0 5%;
+}
+
+.roomDetailcontent-tx{
+  font-size: 10px;
+  padding: 6% 0 3% 0;
+}
+
+.detail-prev p{
+  font-size: 12px;
+}
+
+.detail-next p{
+  font-size: 12px;
+}
+
+.detailArrows img{
+  width: 7px;
+  height: 10.5px;
+}
+
+.forDetail .detail-inquiry-tx{
+  font-size: 14px;
+}
+
+.content02-inquiry a .line{
+  font-size: 14px;
+  width: 80%;
+}
+
   .sp_display_none{
     display: none;
   }
