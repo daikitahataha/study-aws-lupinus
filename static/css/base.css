@@ -1,19 +1,19 @@
 
 @font-face{
   font-family: 'DINNextLTPro-Medium';
-  src: uri('../font/DINNextLTPro-Medium.woff') format('woff');
+  src: url('../font/DINNextLTPro-Medium.woff') format('woff');
 }
 
 @font-face{
   font-family: 'DINNextLTPro-Regular';
-  src: uri('../font/DINNextLTPro-Regular.woff') format('woff');
+  src: url('../font/DINNextLTPro-Regular.woff') format('woff');
 }
 
 
 /* header */
 
 *{
-  font-family: sans-serif;
+  font-family: 'Noto Sans japanese';
 }
 
 #header{
@@ -22,7 +22,7 @@
 
 .logo{
   width: 250px;
-  padding: 2% 2% 0 2%; 
+  padding: 2% 2% 0 2%;
   margin-bottom: 2%;
 }
 
@@ -32,25 +32,48 @@
 
 .header_menu{
   display: flex;
-  margin: 4% 0 0 auto;
+  margin: 45px 0 0 auto;
+  position: relative;
+}
+
+.sp_header_menu{
+  display: none;
+}
+
+.menu-nav {
+ width: 100%;
+ height: 100%;
+ background: #F9F9F9;
+ z-index: 9999;
+ position: fixed;
+ opacity: 1.2;
+ display: none;
+ padding-top: 20%;
 }
 
 .header_menu ul{
   display: flex;
 }
 
-.header_menu ul li{
-  margin-right: 5px;;
-  width: 95px;
+.menu_normal{
+  width: 80px;
   font-size: 14px;
-  letter-spacing: 1.2px; 
+  letter-spacing: 1.2px;
+  text-align: center;
 }
 
-.header_menu li a span{ 
+.menu_normal a{
+  text-align: center;
+}
+
+.menu_inquiry a{
   background: #E3675F;
   color: #F9F9F9;
   border-radius: 4px;
-  padding: 10px;
+  font-size: 14px;
+  padding:10px 18px 10px 18px;
+  font-weight: bold;
+  margin: 0 15px;
 }
 
 .inquiry-wrap{
@@ -93,17 +116,17 @@
 
 #top-mv .mv-tx h2{
   font-size: 40px;
-  letter-spacing: 0.3em;  
+  letter-spacing: 0.3em;
   line-height: 2.2em;
-  color: #F9F9F9; 
+  color: #F9F9F9;
 }
 
 
 #top-mv .mv-tx h3{
   font-size: 16px;
-  letter-spacing: 3px;  
+  letter-spacing: 3px;
   color: #F9F9F9;
-  text-align: center; 
+  text-align: center;
 }
 
 #content01{
@@ -121,7 +144,7 @@
 .content-title h2{
   font-size: 26px;
   line-height: 1.2em;
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
@@ -135,7 +158,7 @@
 }
 
 .content-lead-tx{
-  
+
 }
 
 .content-lead-tx p{
@@ -156,14 +179,14 @@
 }
 
 .content02-title{
-  margin-bottom: 10%;  
+  margin-bottom: 10%;
 }
 
 .content02-title p{
   color: #E3675F;
-  text-align: center; 
-  line-height: 5em; 
-  font-family: 'DINNextLTPro-Regular';
+  text-align: center;
+  line-height: 5em;
+  font-family: 'DINNextLTPro-Medium';
   letter-spacing: 0.1em;
   font-size: 16px;
 }
@@ -265,7 +288,7 @@
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.2em;
-  line-height: 5em;  
+  line-height: 5em;
 }
 
 .content02-inquiry-button{
@@ -345,7 +368,7 @@
 .content03-img{
   width: 100px;
   margin:7% auto;
-} 
+}
 
 .content03-img img{
   width: 100%;
@@ -375,7 +398,7 @@
 
 .case{
   width: 30%;
-  margin: 0 2%;
+  margin: 0 1%;
 }
 
 .case-img{
@@ -423,7 +446,7 @@
   color: #E3675F;
   width: 40%;
   padding: 3% 6%;
-  border-radius: 3px; 
+  border-radius: 3px;
   margin: 10% auto 5% auto;;
 }
 
@@ -431,12 +454,212 @@
   text-align: center;
 }
 
+.seeAlltop a p{
+  text-align: center;
+  color: #E3675F;
+}
+
+
+
 .prev-allow{
     left: 80px;
 }
 .next-allow{
     right: 80px;
 }
+
+/* About */
+
+.about-title{
+  margin: 5% 0 5% 0;
+}
+
+.about-title p{
+  color: #1D1916;
+  text-align: center;
+  line-height: 2.5em;
+  font-family: 'DINNextLTPro-Regular';
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+
+.people-title{
+  color: #1D1916;
+  text-align: center;
+  line-height: 2.5em;
+  font-family: 'DINNextLTPro-Regular';
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+
+.about-title h2{
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 0.1em;
+}
+
+#about-mv{
+  background: url(../../static/images/sven-brandsma-GZ5cKOgeIB0-unsplash.png) center center no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-mv::before{
+  content: '';
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.about-mv-tx{
+    position: absolute;
+    width: 60%;
+    margin:0 auto;
+    color: #F9F9F9;
+}
+
+.about-mv-tx h2{
+  font-size: 30px;
+  font-family: 'DINNextLTPro-Regular';
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: -20%;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.about-mv-tx p{
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #F9F9F9;
+  text-align: center;
+  line-height: 2.3em;
+  font-family: 'Noto Sans JP';
+}
+
+#company-intro{
+
+}
+
+#company-intro table{
+  width: 40%;
+  margin:5% auto;
+  letter-spacing: 1.5px;
+}
+
+#company-intro td{
+  padding: 0.8rem 1rem;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+  line-height: 1.3em
+}
+
+#company-intro .td-left{
+  margin: 10% 2%;
+  text-align: right;
+  font-weight: 500;
+
+}
+
+#company-intro .td-right{
+  margin: 10% 2%;
+  text-align: left;
+  font-weight: 350;
+}
+
+#people{
+  background-color: rgba(220,220,220, 0.2);
+  padding: 0 10% 1% 10%;
+}
+
+.people-title-wrap{
+  margin: 5% 0 0 0;
+}
+
+.people-title{
+  color: #1D1916;
+  text-align: center;
+  line-height: 2.5em;
+  font-family: 'DINNextLTPro-Regular';
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  padding: 5% 0;
+}
+
+.people-content-wrap{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.people-content{
+  display: flex;
+  margin-bottom: 10%;
+  align-items: center;
+}
+
+.people-content-img{
+  width: 25%;
+  margin:0 1%;
+}
+
+.people-content-img img{
+  border-radius: 9em;
+  width: 100%;
+}
+
+.people-content-tx{
+  margin:0 1%;
+  width: 99.9%;
+}
+
+.people-content-name-1{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3%;
+  font-family: 'Noto Sans japanese';
+}
+
+.people-content-name-1 .official{
+  font-weight: 550;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.people-content-name-2 .official2{
+  font-weight: 550;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 2.5em;
+}
+
+.name{
+  font-weight: bold;
+  font-weight: 550;
+  letter-spacing: 0.2em;
+}
+
+.people-content-name-1 .name{
+  margin: 0 2%;
+}
+
+.people-content-name-2{
+  margin-bottom: 3%;
+  font-family: 'Noto Sans japanese';
+}
+
+.people-content-tx-intro{
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
 /* footer  */
 
 .footer{
@@ -444,7 +667,7 @@
 }
 
 .footer-logo{
-  width: 240px;
+  width: 220px;
   margin: 0 auto;
 }
 
@@ -454,7 +677,7 @@
 
 .footer-menu{
   width: 60%;
-  margin: 7% auto;
+  margin: 4% auto 6% auto;
 }
 
 .footer-menu ul{

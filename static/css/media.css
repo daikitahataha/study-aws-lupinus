@@ -1,0 +1,60 @@
+font-face{
+  font-family: 'DINNextLTPro-Medium';
+  src: uri('../font/DINNextLTPro-Medium.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'DINNextLTPro-Regular';
+  src: uri('../font/DINNextLTPro-Regular.woff') format('woff');
+}
+
+@media only screen and (max-width:900px){
+
+  .header_menu{
+    display: none;
+  }
+
+
+  .menu {
+    position: fixed;
+    top: 36px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 10000;
+   }
+
+   .sp_header_menu{
+     display: block;
+   }
+
+   .menu-line {
+    width: 25px;
+    margin: 0 auto 8px;
+    background: #1D1916;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+
+   }
+
+  .active span:nth-of-type(1){
+    -webkit-transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .active span:nth-of-type(2) {
+     opacity: 0;
+  }
+
+  .active span:nth-of-type(3) {
+    -webkit-transform: translateY(-18px) rotate(-45deg);
+    transform: translateY(-18px) rotate(-45deg);
+  }
+
+  .logo{
+    width: 200px;
+  }
+
+
+
+}
