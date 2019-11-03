@@ -27,6 +27,7 @@ font-face{
     z-index: 10000;
    }
 
+
    .sp_header_menu{
      display: block;
    }
@@ -42,8 +43,8 @@ font-face{
    }
 
   .active span:nth-of-type(1){
-    -webkit-transform: translateY(12px) rotate(45deg);
-    transform: translateY(12px) rotate(45deg);
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
 
   .active span:nth-of-type(2) {
@@ -51,8 +52,8 @@ font-face{
   }
 
   .active span:nth-of-type(3) {
-    -webkit-transform: translateY(-18px) rotate(-45deg);
-    transform: translateY(-18px) rotate(-45deg);
+    -webkit-transform: translateY(-14px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
   }
 
   .logo{
@@ -62,6 +63,10 @@ font-face{
 
 
 @media only screen and (max-width:500px){
+
+  #top-mv{
+    height: 300px;
+  }
 
   #top-mv .mv-tx h2{
     font-size: 22px;
@@ -199,8 +204,13 @@ font-face{
     font-size: 8px;
   }
 
+  #about-mv{
+    height: 555px;
+  }
+
   .about-mv-tx{
-    width: 85%;
+    width: 95%;
+
   }
 
   .about-mv-tx p{
@@ -250,6 +260,7 @@ font-face{
 
 #detail-mv{
   justify-content: center;
+  height: 180px;
 }
 
 .detail-mv-tx h3{

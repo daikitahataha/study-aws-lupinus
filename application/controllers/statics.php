@@ -26,4 +26,8 @@ class Statics extends CI_Controller {
   public function roomDetail(){
     $this->load->view('statics/roomDetail');
   }
+
+  public function fee(){
+    $this->load->view('statics/fee');
+  }
 }
