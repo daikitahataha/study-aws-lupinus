@@ -60,6 +60,12 @@ font-face{
     width: 200px;
   }
 
+  .flow_content_proceess{
+    display: block;
+  }
+
+}
+
 
 
 @media only screen and (max-width:500px){
@@ -94,7 +100,7 @@ font-face{
 
   .content-lead-tx {
     font-size: 10px;
-}
+  }
 
   .content02-title p{
     font-size: 14px;
@@ -302,6 +308,78 @@ font-face{
   width: 80%;
 }
 
+#flow_content_sp{
+  display: block;
+}
+
+.flow_content_proccess{
+  display: block;
+  padding: 7% 10% 0 10%;
+  margin-bottom: 20%;
+}
+
+.span{
+  font-size: 22px;
+}
+
+.span-tx-title{
+  font-size: 16px;
+}
+
+.tx_lead{
+  font-size: 12px;
+}
+
+.flow_content_proccess_img{
+  padding: 0 25%;
+  margin: initial;
+  margin-top: 10%;
+}
+
+.flow_content_proccess_img img{
+  text-align: center;
+}
+
+#flow_content_pc{
+  display: none;
+}
+
+#feeContent{
+  padding: 0 5%;
+}
+
+.feeContent01-title p{
+  font-size: 14px;
+}
+
+/*.feeContentdetail P{
+  font-size: 12px;
+}*/
+
+.feePrice{
+  padding: 5% 5%;
+}
+
+.feePrice .price-lead{
+  font-size: 14px;
+}
+
+.price-flex{
+  width: 70%;
+}
+
+.average{
+  font-size: 10px;
+}
+
+.result-flex{
+  display: block;
+}
+
+.price{
+  font-size: 30px;
+}
+
   .sp_display_none{
     display: none;
   }
@@ -309,6 +387,6 @@ font-face{
   .pc_display_none{
     display: block;
   }
-}
+
 
 }

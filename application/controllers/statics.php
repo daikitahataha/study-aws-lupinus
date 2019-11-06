@@ -30,4 +30,8 @@ class Statics extends CI_Controller {
   public function fee(){
     $this->load->view('statics/fee');
   }
+
+  public function flow(){
+    $this->load->view('statics/flow');
+  }
 }

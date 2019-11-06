@@ -905,9 +905,8 @@ html{
 
 }
 
-.feeContentdetail P{
-  font-size:14px;
-  margin: 5% 0;
+.room_info_title{
+  margin: 4% 0 3% 0;
 }
 
 .detailTable-flex{
@@ -927,11 +926,15 @@ html{
   color: #F9F9F9;
   font-size: 14px;
   table-layout: fixed;
+  width: 150px;
+
 }
 
 .table-item-value{
   font-size: 14px;
   table-layout: fixed;
+  width: 330px;
+  font-weight: 350;
 }
 
 .feeContentdetail table tr{
@@ -941,6 +944,7 @@ html{
 .feeContentdetail table tr td{
   border: 1px solid black;
   text-align: center;
+  padding: 5% 0;
 }
 
 .feePrice{
@@ -1030,6 +1034,87 @@ html{
 
 .value-img img{
   width: 100%;
+}
+
+.room_detail{
+  display: flex;
+}
+
+.room_detail_flex{
+
+}
+
+.room_detail__content_flex{
+  display: flex;
+}
+
+.room_detail_item{
+  background: #1D1916;
+  color: #F9F9F9;
+}
+
+.room_detail_item p{
+  text-align: center;
+}
+
+.room_detail_content{
+
+}
+
+/* flow */
+
+#flow_content_pc{
+  padding: 7% 20% 0 20%;
+}
+
+#flow_content_sp{
+  display: none;
+}
+
+.flow_content_proccess{
+  display: flex;
+  margin-bottom: 10%;
+  align-items: center;
+}
+
+.flow_content_proccess_img{
+  margin-right: 10%;
+}
+
+.flow_content_proccess_img img{
+  width: 130px;
+}
+
+.flow_content_proccess_tx{
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+.tx_title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.span{
+  font-size: 44px;
+  color: #E3675F;
+  margin-right: 3%;
+}
+
+.span-tx-title{
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.tx_lead{
+  font-weight: 350;
+  font-size: 14px;
+}
+
+.tx_lead p{
+
 }
 
 /* footer  */

@@ -79,7 +79,7 @@
           </div>
 
           <div class="feeContentdetail">
-            <p>お部屋の基本情報</p>
+            <p class="room_info_title">お部屋の基本情報</p>
             <div class="detailTable-flex">
               <div class="table01">
                 <table>
@@ -88,7 +88,7 @@
                         <td class="table-item-value">1Ldk</td>
                     </tr>
                     <tr>
-                        <td class="table-item">面積</td>
+                        <td class="table-item" style="border-top: 1px solid #F9F9F9; border-bottom: 1px solid #F9F9F9;">面積</td>
                         <td class="table-item-value">60㎡</td>
                     </tr>
                     <tr>
@@ -116,7 +116,6 @@
                 </table>
               </div>
             </div>
-          </div>
 
           <div class="feePrice">
             <p class="price-lead">このようなお部屋の企画・開発・運営費用</p>
@@ -175,7 +174,7 @@
           </div>
 
           <div class="feeContentdetail">
-            <p>お部屋の基本情報</p>
+            <p class="room_info_title">お部屋の基本情報</p>
             <div class="detailTable-flex">
               <div class="table01">
                 <table>
@@ -184,7 +183,7 @@
                         <td class="table-item-value">1Ldk</td>
                     </tr>
                     <tr>
-                        <td class="table-item">面積</td>
+                        <td style="border-top: 1px solid #F9F9F9; border-bottom: 1px solid #F9F9F9;" class="table-item">面積</td>
                         <td class="table-item-value">60㎡</td>
                     </tr>
                     <tr>
