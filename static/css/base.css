@@ -1117,6 +1117,131 @@ html{
 
 }
 
+/* contact form  */
+
+#contact{
+  padding: 0 20%;
+  margin-bottom: 10%;
+}
+
+#contact form{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact_item_wrap{
+  margin-top: 5%;
+}
+
+.contact_item{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contact_item span{
+  color: #E3675F;
+}
+
+.input{
+  width: 100%;
+  height: 50px;
+}
+
+.radio_wrap{
+
+}
+
+.authorization{
+  display: inline-block;
+}
+
+.choice{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 350;
+  margin: 10px 0 5px 5px;
+  letter-spacing: 0.1em;
+}
+
+.input_other{
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.input2{
+  width: 30%;
+  height: 50px;
+}
+
+.input3{
+
+}
+
+.contact_flex{
+  display: flex;
+  align-items: center;
+}
+
+.M2{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+select{
+  width: 100%;
+  height: 30px;
+  background: none transparent;
+  outline:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    background: none transparent;
+    vertical-align: middle;
+    font-size: inherit;
+    color: inherit;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 4px 12px;
+    border:1px solid #ddd;
+    border-radius: initial;
+    font-weight: 350;
+    font-size: 10px;
+    color: rgba(0,0,0, 0.6);
+}
+
+.select-wrap {
+    position: relative;
+    width: 30%;
+}
+.select-wrap:before {
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #7a0;
+  border-right: 2px solid #7a0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option{
+  background: #F9F9F9;
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+}
+
+
+
 /* footer  */
 
 .footer{
