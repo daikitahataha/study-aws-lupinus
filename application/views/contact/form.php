@@ -76,6 +76,8 @@
         <br>
         <input type="text" name="name" class="input" placeholder="　山田　太郎">
         <br>
+        <?= form_error('name', '<div class="error">', '</div>'); ?>
+        <br>
         <div class="contact_item_wrap">
             <p class="contact_item">会社名</p>
         </div>
@@ -88,11 +90,15 @@
         <br>
         <input type="text" name="email" class="input" placeholder="　example@mail.com">
         <br>
+        <?= form_error('mail', '<div class="error">', '</div>'); ?>
+        <br>
         <div class="contact_item_wrap">
             <p class="contact_item"><span>※</span> 電話番号</p>
         </div>
         <br>
-        <input type="text" name="tel" placeholder="　※ 必ずご記入ください" class="input">
+        <input type="text" name="tel" placeholder="　※ 必ずご記入ください" class="input tel">
+        <br>
+        <?= form_error('tel', '<div class="error">', '</div>'); ?>
         <br>
 
         <div class="contact_item_wrap">
@@ -111,10 +117,10 @@
         </div>
         <br>
         <div class="radio_wrap">
-          <input type="radio" name="authorization" value="1"><p class="choice">特になし</p><br>
-          <input type="radio" name="authorization" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
-          <input type="radio" name="authorization" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
-          <input type="radio" name="authorization" value="4"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="right" value="1"><p class="choice">特になし</p><br>
+          <input type="radio" name="right" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
+          <input type="radio" name="right" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
+          <input type="radio" name="right" value="4"><input type="text" name="other" placeholder="その他" class="disable input_other">
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -143,7 +149,7 @@
         </div>
         <br>
         <div class="contact_flex">
-          <input type="text" name="" class="input2"><p class="M2" style="font-family:'DINNextLTPro-Medium';">m2</p>
+          <input type="text" name="area" class="input2"><p class="M2" style="font-family:'DINNextLTPro-Medium';">m2</p>
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -169,26 +175,28 @@
         </div>
         <br>
         <div class="contact_flex">
-          <input type="text" name="" class="input2" placeholder="例： 2001年"><p class="M2">年</p>
+          <input type="text" name="" class="input2" placeholder="　例： 2001年"><p class="M2">年</p>
         </div>
         <br>
         <div class="contact_item_wrap">
-            <p class="contact_item">ご相談したいこと、弊社に期待されているところがありましたらご記入ください</p>
+            <p class="contact_item"><span>※</span> ご相談いただく内容を簡単に教えてください</p>
         </div>
         <br>
         <textarea name="consultation"></textarea>
+        <br>
+        <?= form_error('consultation', '<div class="error">', '</div>'); ?>
         <br>
         <div class="contact_item_wrap">
             <p class="contact_item">LUPINUSをお知りになったきっかけを教えてください</p>
         </div>
         <br>
         <div class="radio_wrap">
-          <input type="radio" name="authorization" value="1"><p class="choice">Yahoo!やGoogleなど検索ホームページ</p><br>
-          <input type="radio" name="authorization" value="2"><p class="choice">SNSやブログ</p><br>
-          <input type="radio" name="authorization" value="3"><p class="choice">知人/他社の紹介</p><br>
-          <input type="radio" name="authorization" value="4"><p class="choice">他サイト、ブログ、掲示板の口コミ</p><br>
-          <input type="radio" name="authorization" value="5"><p class="choice">本・雑誌・新聞</p><br>
-          <input type="radio" name="authorization" value="6"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="origin" value="1"><p class="choice">Yahoo!やGoogleなど検索エンジン</p><br>
+          <input type="radio" name="origin" value="2"><p class="choice">SNSやブログ</p><br>
+          <input type="radio" name="origin" value="3"><p class="choice">知人/他社の紹介</p><br>
+          <input type="radio" name="origin" value="4"><p class="choice">他サイト、ブログ、掲示板の口コミ</p><br>
+          <input type="radio" name="origin" value="5"><p class="choice">本・雑誌・新聞</p><br>
+          <input type="radio" name="origin" value="6"><input type="text" name="other" placeholder="その他" class="disable input_other">
         </div>
 
         <div class="submit">

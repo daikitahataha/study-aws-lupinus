@@ -1206,11 +1206,20 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 4px 12px;
-    border:1px solid #ddd;
+    border: 1px solid rgba(0,0,0,0.4);
     border-radius: initial;
     font-weight: 350;
     font-size: 10px;
     color: rgba(0,0,0, 0.6);
+
+}
+
+input, select, textarea{
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+.tel::placeholder{
+  color: #E3675F;
 }
 
 .select-wrap {
@@ -1218,13 +1227,23 @@ select{
     width: 30%;
 }
 .select-wrap:before {
-  left: 3px;
-  width: 4px;
-  height: 4px;
-  border-top: 2px solid #7a0;
-  border-right: 2px solid #7a0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+    /*z-index: 1;
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    content: "\02228";
+    font-family: "IonIcons";
+    color: rgba(0,0,0,0.3);
+    pointer-events: none;*/
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px rgba(0,0,0,0.3);
+    border-right: solid 1px rgba(0,0,0,0.3);
+    transform: rotate(135deg);
+    position: absolute;
+    top: 25%;
+    left: 88%;
 }
 
 select::-ms-expand {
@@ -1256,6 +1275,12 @@ textarea{
   border-radius: 3px;
   border: 1px solid #E3675F;
   letter-spacing: 0.1em;
+}
+
+.error{
+  color: #E3675F;
+  margin-top: 2%;
+  font-size: 14px;
 }
 
 /* footer  */

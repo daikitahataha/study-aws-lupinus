@@ -380,6 +380,52 @@ font-face{
   font-size: 30px;
 }
 
+/* contact */
+
+#contact{
+  padding: 0 15%;
+  margin: 15% auto 20% auto;
+}
+
+
+.select-wrap{
+  width: 50%;
+}
+
+.select-wrap:before{
+  left: 80%;
+}
+
+.input2{
+  width: 50%;
+  height: 40px;
+}
+
+input{
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+.input3{
+  height: 40px;
+}
+
+.input{
+  height: 35px;
+}
+
+.contact_item_wrap{
+  margin-top: 15%;
+}
+
+.submit{
+  width: 60%;
+  margin-top: 20%;
+}
+
+.input_other::placeholder{
+  font-size: 10px;
+}
+
   .sp_display_none{
     display: none;
   }
